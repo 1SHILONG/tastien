@@ -28,3 +28,7 @@
     脱离文档流
   2. 移动端多用弹性布局
     
+- git 提交
+  1. 第一次git 命令行
+  全局配置 git config --global user.name
+    
