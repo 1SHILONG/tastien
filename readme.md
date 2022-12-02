@@ -43,7 +43,7 @@
 
 - 滴滴swiper 多页活动菜单功能
     用户体验 less is more 摆在第一位
-    菜单太多了， 用户的密集恐惧症， 把重要的放在首页
+    菜单太多了, 用户的密集恐惧症， 把重要的放在首页
     其他的可以多放一些
     技术难度
     1. swiper >  2  swiper-item
@@ -60,9 +60,9 @@
             menu_type
             this.setData()
 - 数据响应式编程
-    他是一个思想， 有别于DOM 编程API
-    设置一些页面效果， 操作的不是DOM，
-    操作的是数据， 因为数据一旦发生改变， 页面会自动刷新
+    他是一个思想, 有别于DOM 编程API
+    设置一些页面效果, 操作的不是DOM,
+    操作的是数据, 因为数据一旦发生改变, 页面会自动刷新
     1. 滴滴可变高度的首页菜单 
     2. tabbar 组件
         data  添加  tab  属性， 表示当前哪个tab被激活
@@ -81,6 +81,13 @@
             }
         ]
 
+    - 奶茶小程序的门店选择页
+        1. LBS Location Base Service
+            高德 LBS 技术 
+            美团
+        2. wx.getLocation
+            lat long
+
 - css的技巧
     1. 选择器优先级
         p.md2 11
@@ -98,5 +105,16 @@
         Block 开始 rx_tab  新的组件
         Element  内部元素的声明  rx_tab__item
         Modifier rx_tab__item-on
-
+    4. 运用常规css 命名套路
+        - BEM 开启一个新的功能区域
+        - .wx_btn .wx_btn-primary
+        - .page>.page__hd+.page__bd+.page__ft
+          .cell>.cell__hd+.cell__bd+.cell__ft
+        - __ Element 只做一级,  用简单单词 不重复
+    5. 小程序不允许在wxss 里面 background: url(本地图片)
+        - 小程序之所以小,   不要做太多事情 产品定位
+        - 包的大小小于2M, 
+        - base64 格式,  图片格式  
+          乱码一样 Google 图片格式  更小
+        - background: url()
 -

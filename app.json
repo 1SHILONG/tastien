@@ -1,5 +1,7 @@
 {
     "pages": [
+        
+        "pages/map/map",
         "pages/waimai/waimai",
         "pages/index/index",
         "pages/didi/didi",
@@ -11,7 +13,6 @@
         "navigationBarBackgroundColor": "#fff",
         "navigationBarTitleText": "Weixin",
         "navigationBarTextStyle": "black"
-        
     },
     "style": "v2",
     "sitemapLocation": "sitemap.json"
